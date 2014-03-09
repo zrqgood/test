@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+        
+<validators>
+<field name="userName">
+	<field-validator type="required">
+		<!--去掉空格 -->
+		<param name="trim">true</param>
+		<message>姓名不能为空1</message> 
+	</field-validator>
+</field>
+</validators>

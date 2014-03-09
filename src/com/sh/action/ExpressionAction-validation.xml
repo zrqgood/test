@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+
+<validator type="expression">
+	<param name="expression">max2 > min2</param>
+	<message>max1要大于 min1</message>
+</validator>
+
+<field name="max2">
+<field-validator type="fieldexpression">
+	<param name="expression">max2 > min2</param>
+	<message>max2要大于 min2</message>
+</field-validator>
+</field>
+</validators>

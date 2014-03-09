@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+<!-- 根据字段配置校验 -->
+
+<!--
+short-circuit="true" :表示短路，即下面的: 如果age 不是整数 就不会验证 age 的大小范围，这样我们的错误信息只有一个   （类似： if...  else if...）
+short-circuit="false" :表示不短路(默认): 即下面的: 如果 age 不是整数，还会继续判断age的大小范围 这样页面就有两个错误信息  （类似if...  if..）
+-->
+<!-- 验证字段必须为整数 -->
+<field name="age">
+	 <field-validator type="conversion" short-circuit="true">
+	  	<message>年龄必须为整数</message>
+	 </field-validator>
+</field>
+
+<!-- 验证字段必须的大小范围 -->
+<field name="age">
+	<field-validator type="int" short-circuit="true">
+		 <param name="min">18</param>
+		 <param name="max">100</param>
+		 <message>年龄必须在${min}到${max}之间</message>
+	</field-validator>
+</field>
+
+<field name="name">
+<field-validator type="requiredstring" short-circuit="true">
+<message>姓名不能为空</message>
+</field-validator>
+</field>
+
+<field name="name">
+<field-validator type="stringlength" short-circuit="true">
+	<param name="maxLength">15</param>
+	<param name="minLength">6</param>
+	<message>姓名长度必须为${minLength}到${maxLength}之间!</message>
+</field-validator>
+</field>
+
+</validators>

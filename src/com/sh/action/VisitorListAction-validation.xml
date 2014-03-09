@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+        
+<validators>
+	<field name="userlist">
+		<field-validator type="visitor">
+			<!--复合类型属性的上下文校验名称  -->
+			<param name="context">visitorContext2</param>
+			<!--是否添加前缀 如果true 就使用message-->
+		    <param name="appendPrefix">true</param>
+		    <message>联系人：</message>
+		</field-validator>
+	</field>
+</validators>

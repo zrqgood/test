@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="10,10" size="280,140">
+    <action name="validatorAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="login1.jsp" />
+      </result>
+    </action>
+    <action name="userAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="login2.jsp" />
+      </result>
+    </action>
+    <action name="visitorAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="login3.jsp" />
+      </result>
+    </action>
+    <action name="visitorAction1" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="login3.jsp" />
+      </result>
+    </action>
+    <action name="validateAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="validateLoginAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="innerValidateAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="login.jsp" />
+      </result>
+    </action>
+    <action name="visitorListAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="visitorList.jsp" />
+      </result>
+    </action>
+    <action name="requiredAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="requiredlogin.jsp" />
+      </result>
+    </action>
+    <action name="intAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="int.jsp" />
+      </result>
+    </action>
+    <action name="emailUrlAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="emailUrl.jsp" />
+      </result>
+    </action>
+    <action name="expressionAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="success.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="expression.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="100,205" size="150,55" />
+  <webResource name="login1.jsp" path="/login1.jsp" location="0,0" size="0,0" />
+  <webResource name="login2.jsp" path="/login2.jsp" location="0,0" size="0,0" />
+  <webResource name="login3.jsp" path="/login3.jsp" location="0,0" size="0,0" />
+  <webResource name="success.jsp" path="/success.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="/login.jsp" location="0,0" size="0,0" />
+  <webResource name="visitorList.jsp" path="/visitorList.jsp" location="0,0" size="0,0" />
+  <webResource name="requiredlogin.jsp" path="/requiredlogin.jsp" location="0,0" size="0,0" />
+  <webResource name="int.jsp" path="/int.jsp" location="0,0" size="0,0" />
+  <webResource name="emailUrl.jsp" path="/emailUrl.jsp" location="0,0" size="0,0" />
+  <webResource name="expression.jsp" path="/expression.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

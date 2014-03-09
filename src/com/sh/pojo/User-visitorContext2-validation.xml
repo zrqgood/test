@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<message>姓名不能为空！</message>
+		</field-validator>
+	</field>
+	<field name="age">
+		<field-validator type="int">
+			<param name="min">20</param>
+			<param name="max">120</param>
+			<message>年龄为${min}到${max}之间</message>
+		</field-validator>
+	</field>
+	<field name="sal">
+	
+		<!-- 10<=sal<=100 -->
+		<field-validator type="double">
+			<!-- 允许的最大值 -->
+			<param name="minInclusive">10</param>
+			<!-- 允许的最大值 -->
+			<param name="maxInclusive">100</param>
+			<message>${minInclusive}大于等于 薪水 小于等于  ${maxInclusive}</message>			
+		</field-validator>
+		
+		<!-- 10<sal<100 -->
+		<field-validator type="double">
+			<!-- 允许的最大值 -->
+			<param name="minExclusive">10</param>
+			<!-- 允许的最大值 -->
+			<param name="maxExclusive">100</param>
+			<message>"${minInclusive}大于  薪水 小于 ${maxInclusive}"</message>			
+		</field-validator>
+	
+	</field>
+	
+	<field name="mycode">
+		<field-validator type="regex">
+			<param name="expression">
+				<![CDATA[[0-9]\d{5}(?!\d)]]>
+			</param>
+			<message>不是有效的邮政编码！</message>
+		</field-validator>
+	</field>
+</validators>

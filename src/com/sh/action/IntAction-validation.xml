@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+        
+<validators>
+	<field name="age">
+		<field-validator type="conversion">
+			<!--复合类型属性的上下文校验名称  -->
+			<param name="repopulateField">true</param>
+			<!--是否添加前缀 如果true 就使用message-->
+		    <message>年龄必须为整数：</message>
+		</field-validator>
+	</field>
+</validators>

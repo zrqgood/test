@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts> 
+	<!-- 如果 注解的action配置改变时候不需要重新启动tomcate -->
+	<constant name="struts.devMode" value="true"/>  
+    <constant name="struts.convention.classes.reload" value="true" /> 
+	
+	<package name="default" extends="struts-default">
+		<action name="validatorAction" class="com.sh.action.InnerValidator1Action">
+			<result>/index.jsp</result>
+			<result name="input">/login1.jsp</result>
+		</action>
+		
+		<action name="userAction" class="com.sh.action.UserAction">
+			<result>/index.jsp</result>
+			<result name="input">/login2.jsp</result>
+		</action>
+		
+		<action name="visitorAction" class="com.sh.action.VisitorAction">
+			<result>/index.jsp</result>
+			<result name="input">/login3.jsp</result>
+		</action>
+		
+		<action name="visitorAction1" class="com.sh.action.VisitorAction1">
+			<result>/index.jsp</result>
+			<result name="input">/login3.jsp</result>
+		</action>
+		
+		<action name="validateAction" class="com.sh.action.ValidateAction">
+			<result>/success.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="validateLoginAction" class="com.sh.action.ValidateAction" method="login">
+			<result>/success.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		
+		<action name="innerValidateAction" class="com.sh.action.InnerValidatorAction">
+			<result>/success.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+		
+		<action name="visitorListAction" class="com.sh.action.VisitorListAction">
+			<result>/success.jsp</result>
+			<result name="input">/visitorList.jsp</result>		
+		</action>
+		
+		<action name="requiredAction" class="com.sh.action.RequiredAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/requiredlogin.jsp</result>		
+		</action>
+		
+		<action name="intAction" class="com.sh.action.IntAction">
+		<result name="success">/success.jsp</result>
+			<result name="input">/int.jsp</result>	
+		</action>
+		<action name="emailUrlAction" class="com.sh.action.EmailUrlAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/emailUrl.jsp</result>
+		</action>
+		
+		<action name="expressionAction" class="com.sh.action.ExpressionAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/expression.jsp</result>
+		</action>
+		
+		<action name="myValidateAction" class="com.sh.action.MyValidateAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/myValidator.jsp</result>
+		</action>
+		
+	</package>
+    
+</struts>
