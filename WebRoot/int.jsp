@@ -22,5 +22,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	年龄：<s:textfield name="age"/><br/>
    	<s:submit value="提交"/>
    </s:form>
+   <div>修改.....</div>
   </body>
 </html>
