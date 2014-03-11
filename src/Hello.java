@@ -12,6 +12,7 @@ public class Hello {
 				}
 			}
 			System.out.println(a[i]);
+			System.out.println(a[i]);
 		}
 	}
 }
