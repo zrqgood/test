@@ -3,7 +3,7 @@ package com.sh.action;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class EmailUrlAction extends ActionSupport {
-private String email;
+private String email;//ÓÊ¼þµØÖ·
 private String url;
 
 @Override
