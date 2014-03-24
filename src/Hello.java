@@ -4,6 +4,9 @@ public class Hello {
 		//int[] b = new int[7];
 		
 		
+		
+		
+		
 		int temp = 0;
 		for (int i = 0; i < a.length; i++) {
 			for (int j = i + 1; j < a.length; j++) {
